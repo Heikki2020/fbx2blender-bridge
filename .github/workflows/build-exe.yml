@@ -38,12 +38,12 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --onefile --windowed double_click_to_open_fbx_in_blender.py
+          pyinstaller --onefile --windowed fbx2blender_bridge.py
 
       - name: Create/Publish Release with EXE
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tag.outputs.new_tag }}
           name: Release ${{ steps.tag.outputs.new_tag }}
-          files: dist/double_click_to_open_fbx_in_blender.exe
+          files: dist/fbx2blender_bridge.exe
           generate_release_notes: trueml
