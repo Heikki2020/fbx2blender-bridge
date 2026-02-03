@@ -1,6 +1,6 @@
-# FBX to Blender Bridge
+# FBX to Blender - A Bridging App
 
-Double-click an FBX file to open it in Blender.
+Double-click an FBX file to import it into Blender.
 
 &copy; Henry & Lukas 2025-2026
 
